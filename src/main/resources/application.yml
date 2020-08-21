@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: product-reader
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+path:
+  productFile: data/product_data.csv
